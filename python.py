@@ -1,4 +1,4 @@
-'''import keyword
+import keyword
 print (keyword.kwlist)
 
 
@@ -19,7 +19,7 @@ print(a)
 # To access F 
 print(a[6])
 
-List
+#List
 my_list = [1, 2, 3, 4, 'hello', 5.6, True]
 # to Extract hello from the list
 print(my_list[4])
@@ -47,7 +47,7 @@ print(my_dict['a'][-2])
 #list of keys
 print(my_dict.keys())
 
-slicing 
+#slicing 
 a = "hello world"
 print(a[0:5])
 print(a[6:11])
@@ -133,7 +133,7 @@ print(rev)
 
 l = [10,20,30,40,50]
 for i in l:
-    print(i)'''
+    print(i)
 
 s = input('enter:')
 out=''
@@ -152,11 +152,11 @@ for i in s:
     rev = i + rev
 print(rev)
 
-'''#Nested for Loops 
+#Nested for Loops 
 for i in range(1, 6):
     for j in range(1, 6):
         print('*', end=' ')
-    print()'''
+    print()
 
 
 
