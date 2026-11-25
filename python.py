@@ -167,3 +167,19 @@ for i in range(1, 6):
         else:
             print('@', end=' ')
     print()
+
+a = "happy birthday"
+#slice htr
+print(a[-4:-7:-1])
+#functions with arg with return
+def convert_to_uppercase(s,out):
+    result = ''
+    for char in s:
+        if 'a' <= char <= 'z':
+            result += chr(ord(char) - 32)
+        else:
+            result += char
+    return result
+print(convert_to_uppercase(input("Enter a string : "),""))
+
+#function with arg without return
