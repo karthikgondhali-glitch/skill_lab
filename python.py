@@ -1,4 +1,4 @@
-import keyword
+'''import keyword
 print (keyword.kwlist)
 
 
@@ -183,3 +183,55 @@ def convert_to_uppercase(s,out):
 print(convert_to_uppercase(input("Enter a string : "),""))
 
 #function with arg without return
+def convert():
+    s= input("enter:")
+    out=''
+    for i in s:
+        if"a"<=i<="z":
+            out+=chr(ord(i)-32)
+        else:
+            out+=i
+    print(out)
+convert()
+#function without arg with return
+
+#function without arg without return
+# class and object
+class college:
+    cname ="gopalan"
+    cloc="bangalore"
+s1=college()
+print(s1.cname)
+print(s1.cloc)
+college.cloc = "mysore"
+s2=college()
+print(s2.cname)#this is a class variable which is shared by all the objects of the class
+print(s2.cloc)#this is a class variable which is shared by all the objects of the class
+
+s1=college()
+s1.sname='EREN'
+s1.phone='0000000000'
+
+s2=college()
+s2.sname='MIKASA'
+s2.phone='0000000001'
+
+print(s1.cname)
+s1.cloc='KR puram'
+print('After Changing')
+print(s1.cloc)
+print(s2.cloc)
+print(college.cloc)
+print(s1.phone)'''
+class college():
+    def __init__(self,sname,phno,usn):
+        self.sname=sname
+        self.phno=phno
+        self.usn=usn
+
+s1=college('EREN','0000000000','DEMO001')
+s2=college('MIKASA','0000000001','DEMO002')
+print(s1.sname)
+print(s1.phno)
+s1.display= lambda : print(s1.sname,s1.phno,s1.usn)
+s1.display()
